@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="27dp"
+    android:orientation="vertical"
+    tools:context=".FoodDetailActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:scaleType="centerCrop"
+            />
+<!--        <com.denzcoskun.imageslider.ImageSlider-->
+<!--            android:id="@+id/image_slider"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="323dp"-->
+<!--            app:iss_auto_cycle="true"-->
+<!--            app:iss_period="1000"-->
+<!--            app:iss_delay="0"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_marginTop="10dp"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:elevation="5dp"
+                android:background="@drawable/back_button"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                />
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/restaurant_favorite"
+                android:layout_alignParentEnd="true"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:scaleType= "centerInside"
+                android:src="@drawable/facebook_love"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="22dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/product_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/detail_rate_ratio"
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/detail_num_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/outrageous_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_review"
+            android:text="See review"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textColor="@color/outrageous_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_price"
+            android:textSize="31sp"
+            android:text="0"
+            />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/detail_remove"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_remove_circle_outline_30"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_quantity"
+                android:textSize="16sp"
+                android:text="0"
+                />
+
+            <ImageButton
+                android:id="@+id/detail_add"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_add_circle_outline_30"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginVertical="22dp"
+        android:id="@+id/detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="None"
+        />
+
+    <TextView
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/choice_of_add"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detail_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

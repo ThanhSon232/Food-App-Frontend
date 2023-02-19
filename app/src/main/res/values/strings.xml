@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="sign_up">Sign up</string>
+    <string name="enter_name">Enter your full name</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="verification">Verification</string>
+    <string name="verification_subtitle">Please type the verification code sent to</string>
+    <string name="dont_reveice_code">You don\'t receive a code?</string>
+    <string name="resend">Resend</string>
+    <string name="what_would_you_like_to_order">What would you like to order</string>
+    <string name="find_hint">Find food right here...</string>
+    <string name="featured">Featured restaurants</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_profile">My Profile</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="payment_method">Payment Methods</string>
+    <string name="settings">Settings</string>
+    <string name="popular">Popular Items</string>
+    <string name="view_all">View all ></string>
+    <string name="choice_of_add">Choice of add on</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navDrawer"
+    android:layout_gravity="start"
+    app:menu="@menu/nav_item"
+    app:headerLayout="@layout/nav_header"
+    app:itemIconTint="#9796A1"
+    android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/log_out"
+        android:layout_marginVertical="32dp"
+        android:layout_marginHorizontal="22dp"
+        android:padding="5dp"
+        android:background="@drawable/button_background"
+        android:drawablePadding="5dp"
+        android:text="Log out"
+        android:drawableStart="@drawable/ic_baseline_remove_circle_24"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.navigation.NavigationView>

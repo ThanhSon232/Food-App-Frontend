@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="26dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_marginTop="37dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:elevation="5dp"
+            android:background="@drawable/back_button"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verification"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:id="@+id/otp_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verification_subtitle"
+            />
+
+       <LinearLayout
+           android:layout_marginVertical="20dp"
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:id="@+id/code_1"
+               android:textColor="@color/outrageous_orange"
+               android:textStyle="bold"
+               android:inputType="numberDecimal"
+               android:maxLength="1"
+               android:gravity="center"
+               android:background="@drawable/edit_text_border"
+               android:layout_width="65dp"
+               android:layout_marginHorizontal="10dp"
+               android:layout_height="65dp"/>
+
+           <EditText
+               android:id="@+id/code_2"
+               android:textColor="@color/outrageous_orange"
+               android:textStyle="bold"
+               android:inputType="numberDecimal"
+               android:maxLength="1"
+               android:gravity="center"
+               android:background="@drawable/edit_text_border"
+               android:layout_width="65dp"
+               android:layout_marginHorizontal="10dp"
+               android:layout_height="65dp"/>
+
+           <EditText
+               android:id="@+id/code_3"
+               android:textColor="@color/outrageous_orange"
+               android:textStyle="bold"
+               android:inputType="numberDecimal"
+               android:maxLength="1"
+               android:gravity="center"
+               android:background="@drawable/edit_text_border"
+               android:layout_width="65dp"
+               android:layout_marginHorizontal="10dp"
+               android:layout_height="65dp"/>
+
+           <EditText
+               android:id="@+id/code_4"
+               android:textColor="@color/outrageous_orange"
+               android:textStyle="bold"
+               android:inputType="numberDecimal"
+               android:maxLength="1"
+               android:gravity="center"
+               android:background="@drawable/edit_text_border"
+               android:layout_width="65dp"
+               android:layout_marginHorizontal="10dp"
+               android:layout_height="65dp"/>
+       </LinearLayout>
+
+      <LinearLayout
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/dont_reveice_code"
+              />
+
+          <TextView
+              android:id="@+id/resendCode"
+              android:layout_marginStart="2dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/outrageous_orange"
+              android:clickable="true"
+              android:text="@string/resend"
+              />
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

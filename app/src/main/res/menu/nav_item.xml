@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/ic_baseline_article_24"
+        android:title="@string/my_orders"
+        />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/my_profile"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:id="@+id/nav_delivery"
+        android:title="@string/delivery_address"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:id="@+id/nav_payment"
+        android:title="@string/payment_method"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:id="@+id/nav_settings"
+        android:title="@string/settings"
+        />
+</menu>
